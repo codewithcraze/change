@@ -204,7 +204,7 @@ export const Logo = forwardRef(
         }}
         {...other}
       >
-        {isSingle ? singleLogo : fullLogo}
+        {/* {isSingle ? singleLogo : fullLogo} */}
       </Box>
     );
   }

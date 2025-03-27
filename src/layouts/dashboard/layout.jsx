@@ -130,10 +130,10 @@ export function DashboardLayout({ sx, children, header, data }) {
                   />
                 )}
                 {/* -- Workspace popover -- */}
-                <WorkspacesPopover
-                  data={_workspaces}
-                  sx={{ color: 'var(--layout-nav-text-primary-color)' }}
-                />
+                {/* <WorkspacesPopover */}
+                {/*  data={_workspaces} */}
+                {/*  sx={{ color: 'var(--layout-nav-text-primary-color)' }} */}
+                {/* /> */}
               </>
             ),
             rightArea: (

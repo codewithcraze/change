@@ -15,7 +15,9 @@ export default function Page() {
         <title> {metadata.title}</title>
       </Helmet>
 
-      <BlankView title="Page one" />
+
+
+      { /* <BlankView title="Page one" /> */ }
     </>
   );
 }
