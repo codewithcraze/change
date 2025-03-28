@@ -44,11 +44,17 @@ export const navData = [
    * Overview
    */
   {
-    subheader: 'Overview 6.0.0',
+   //  subheader: 'codewithdeepak.in',
     items: [
-      { title: 'One', path: paths.dashboard.root, icon: ICONS.dashboard },
-      { title: 'Two', path: paths.dashboard.two, icon: ICONS.ecommerce },
-      { title: 'Three', path: paths.dashboard.three, icon: ICONS.analytics },
+      {
+        title: 'Blog Section',
+        path: paths.dashboard.root,
+        icon: ICONS.dashboard,
+        children: [
+          { title: 'Blogs', path: paths.dashboard.blog },
+          { title: 'Three', path: paths.dashboard.viewBlog },
+        ]
+      }
     ],
   },
   /**
