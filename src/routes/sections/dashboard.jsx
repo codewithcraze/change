@@ -16,6 +16,9 @@ const PageThree = lazy(() => import('src/pages/dashboard/three'));
 const PageFour = lazy(() => import('src/pages/dashboard/four'));
 const PageFive = lazy(() => import('src/pages/dashboard/five'));
 const PageSix = lazy(() => import('src/pages/dashboard/six'));
+const Problem = lazy(() => import('src/pages/dashboard/problem'));
+const EditProblem = lazy(() => import('src/pages/dashboard/edit.problem'));
+
 
 // ----------------------------------------------------------------------
 
@@ -33,8 +36,13 @@ export const dashboardRoutes = [
     element: CONFIG.auth.skip ? <>{layoutContent}</> : <AuthGuard>{layoutContent}</AuthGuard>,
     children: [
       { element: <IndexPage />, index: true },
-      { path: 'two', element: <PageTwo /> },
-      { path: 'three', element: <PageThree /> },
+      {
+        path: 'learn',
+        children: [
+          {element: <Problem />, index: true},
+          {path: 'view', element: <EditProblem />}
+        ]
+      },
       {
         path: 'group',
         children: [

@@ -44,15 +44,15 @@ export const navData = [
    * Overview
    */
   {
-   //  subheader: 'codewithdeepak.in',
+    subheader: 'codewithdeepak.in',
     items: [
+
       {
-        title: 'Blog Section',
-        path: paths.dashboard.root,
+        title: 'Learning Section',
+        path: `${paths.dashboard.learn.root}`,
         icon: ICONS.dashboard,
         children: [
-          { title: 'Blogs', path: paths.dashboard.blog },
-          { title: 'Three', path: paths.dashboard.viewBlog },
+          { title: 'Add Problem', path: paths.dashboard.learn.view },
         ]
       }
     ],
